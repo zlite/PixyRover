@@ -14,8 +14,7 @@
 //
 // end license header
 //
-
-// Designed for Adafruit Arduino Motor Shield 2.3: https://www.adafruit.com/product/1438
+//Designed for Adafruit Arduino Motor Shield: https://www.adafruit.com/product/1438
 
 #include <Pixy2.h>
 #include <PIDLoop.h>
@@ -27,7 +26,7 @@ Adafruit_MotorShield AFMS = Adafruit_MotorShield();
 // Or, create it with a different I2C address (say for stacking)
 // Adafruit_MotorShield AFMS = Adafruit_MotorShield(0x61); 
 
-// Select which 'port' M1, M2, M3 or M4. In this case, M3 and M4
+// Select which 'port' M1, M2, M3 or M4. In this case, M1
 Adafruit_DCMotor *myMotor1 = AFMS.getMotor(3);
 Adafruit_DCMotor *myMotor2 = AFMS.getMotor(4);
 // You can also make another motor on port M2
